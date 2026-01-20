@@ -6,7 +6,7 @@ const themeToggle = document.getElementById("theme-toggle");
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  // -------- CLEAR PREVIOUS RESULTS --------
+ 
   const factorsList = document.getElementById("factors");
   const prosList = document.getElementById("pros");
   const consList = document.getElementById("cons");
@@ -41,7 +41,7 @@ form.addEventListener("submit", async (e) => {
     const raw = await response.json();
     const data = typeof raw === "string" ? JSON.parse(raw) : raw;
 
-    /* -------- FACTORS (NO UNDERSCORES, NO TRUE/FALSE) -------- */
+   
     if (data.factors && typeof data.factors === "object") {
       for (const [key, value] of Object.entries(data.factors)) {
         const li = document.createElement("li");
@@ -66,7 +66,7 @@ form.addEventListener("submit", async (e) => {
       factorsList.appendChild(li);
     }
 
-    /* -------- PROS -------- */
+    
     if (Array.isArray(data.pros) && data.pros.length > 0) {
       data.pros.forEach((item) => {
         const li = document.createElement("li");
@@ -79,7 +79,8 @@ form.addEventListener("submit", async (e) => {
       prosList.appendChild(li);
     }
 
-    /* -------- CONS -------- */
+
+
     if (Array.isArray(data.cons) && data.cons.length > 0) {
       data.cons.forEach((item) => {
         const li = document.createElement("li");
@@ -88,7 +89,7 @@ form.addEventListener("submit", async (e) => {
       });
     }
 
-    /* -------- EXPLANATION -------- */
+    
     if (Array.isArray(data.explanation)) {
       data.explanation.forEach((step) => {
         const li = document.createElement("li");
@@ -101,7 +102,7 @@ form.addEventListener("submit", async (e) => {
       explanationList.appendChild(li);
     }
 
-    /* -------- RECOMMENDATION -------- */
+    
     if (data.recommendation === "NOT FEASIBLE") {
       recommendationEl.innerText =
         "This decision is not feasible with the given context.";
@@ -118,7 +119,7 @@ form.addEventListener("submit", async (e) => {
   }
 });
 
-/* -------- THEME TOGGLE -------- */
+
 themeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark");
   themeToggle.textContent =

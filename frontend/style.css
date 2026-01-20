@@ -1,4 +1,4 @@
-/* -------- RESET & BASE -------- */
+/* ------ RESET & BASE -------- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,7 +13,8 @@ body {
   padding: 40px 16px;
 }
 
-/* -------- MAIN CONTAINER -------- */
+/* ------- MAIN PAGE -------- */
+
 .container {
   max-width: 900px;
   margin: auto;
@@ -38,6 +39,8 @@ body {
 }
 
 /* -------- HEADINGS -------- */
+
+
 h1 {
   font-size: 2.6rem;
   font-weight: 700;
@@ -58,7 +61,7 @@ h1 {
   font-size: 1.05rem;
 }
 
-/* -------- FORM -------- */
+/* -------- FORM ----- */
 form {
   display: grid;
   gap: 20px;
@@ -91,6 +94,8 @@ textarea:focus {
 }
 
 /* -------- BUTTON -------- */
+
+
 button {
   margin-top: 12px;
   padding: 16px;
@@ -113,7 +118,7 @@ button:active {
   transform: scale(0.98);
 }
 
-/* -------- LOADING -------- */
+/* ------- LOADING -------- */
 #loading {
   margin-top: 22px;
   text-align: center;
@@ -129,7 +134,7 @@ button:active {
   100% { opacity: 0.35; }
 }
 
-/* -------- RESULTS -------- */
+
 #result {
   margin-top: 34px;
 }
@@ -143,7 +148,9 @@ button:active {
   border-image-slice: 1;
 }
 
-/* -------- SECTIONS -------- */
+
+/* ------ SECTIONS ----- */
+
 .section {
   margin-top: 24px;
   padding: 22px;
@@ -159,7 +166,7 @@ button:active {
   color: #312e81;
 }
 
-/* -------- LISTS -------- */
+/* ---- LISTS -------- */
 .section ul {
   padding-left: 20px;
 }
@@ -170,7 +177,8 @@ button:active {
   color: #334155;
 }
 
-/* -------- RECOMMENDATION -------- */
+/* ------ RECOMMENDATION -------- */
+
 #recommendation {
   background: linear-gradient(135deg, #eef2ff, #ddd6fe);
   padding: 18px 20px;
@@ -182,12 +190,14 @@ button:active {
   box-shadow: inset 0 0 0 1px rgba(99, 102, 241, 0.2);
 }
 
-/* -------- UTILS -------- */
+/* -------- UTILS ------ */
+
 .hidden {
   display: none;
 }
 
-/* -------- RESPONSIVE -------- */
+/* -------- RESPONSIVE ------ */
+
 @media (max-width: 640px) {
   .container {
     padding: 28px 24px;
@@ -197,7 +207,9 @@ button:active {
     font-size: 2rem;
   }
 }
-/* -------- THEME TOGGLE -------- */
+
+/* -- THEME TOGGLE ------ */
+
 .theme-toggle {
   position: absolute;
   top: 24px;
@@ -208,7 +220,11 @@ button:active {
   cursor: pointer;
 }
 
-/* -------- DARK MODE -------- */
+
+/* ----- DARK MODE ------ */
+
+
+
 body.dark {
   background: radial-gradient(circle at top left, #0f172a, #020617);
   color: #e5e7eb;
@@ -235,7 +251,11 @@ body.dark #recommendation {
   background: linear-gradient(135deg, #1e293b, #020617);
   color: #e5e7eb;
 }
-/* -------- SUCCESS ANIMATION -------- */
+
+
+/* --- ANIMATION -------- */
+
+
 #result {
   animation: slideUp 0.5s ease;
   color: #e5e7eb;
@@ -252,16 +272,5 @@ body.dark #recommendation {
   }
 }
 
-/* -------- DARK MODE TEXT OVERRIDES (FIX GREY TEXT) -------- */
-body.dark .section h3,
-body.dark .section li,
-body.dark #result h2,
-body.dark #recommendation 
-{
-  color: #ffffff; /* true white for readability */
-}
 
-/* Slightly softer text for long explanations */
-body.dark .section li {
-  opacity: 0.96;
-}
+
