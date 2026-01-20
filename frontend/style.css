@@ -1,0 +1,175 @@
+/* -------- RESET & BASE -------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  color: #1f2937;
+  min-height: 100vh;
+  padding: 40px 16px;
+}
+
+/* -------- MAIN CONTAINER -------- */
+.container {
+  max-width: 860px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 36px 40px;
+  box-shadow:
+    0 20px 40px rgba(15, 23, 42, 0.08),
+    0 4px 10px rgba(15, 23, 42, 0.04);
+}
+
+/* -------- HEADINGS -------- */
+h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 32px;
+  color: #475569;
+  font-size: 1rem;
+}
+
+/* -------- FORM -------- */
+form {
+  display: grid;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #334155;
+}
+
+textarea {
+  width: 100%;
+  min-height: 90px;
+  padding: 14px 16px;
+  font-size: 0.95rem;
+  border-radius: 10px;
+  border: 1px solid #cbd5f5;
+  background: #f8fafc;
+  resize: vertical;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+  background: #ffffff;
+}
+
+/* -------- BUTTON -------- */
+button {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ffffff;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* -------- LOADING -------- */
+#loading {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 600;
+  color: #4f46e5;
+  animation: pulse 1.4s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.4; }
+  50% { opacity: 1; }
+  100% { opacity: 0.4; }
+}
+
+/* -------- RESULTS -------- */
+#result {
+  margin-top: 30px;
+}
+
+#result h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 6px;
+}
+
+/* -------- SECTIONS -------- */
+.section {
+  margin-top: 22px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.section h3 {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  color: #1e293b;
+}
+
+/* -------- LISTS -------- */
+.section ul {
+  padding-left: 18px;
+}
+
+.section li {
+  margin-bottom: 6px;
+  line-height: 1.6;
+  color: #334155;
+}
+
+/* -------- RECOMMENDATION -------- */
+#recommendation {
+  background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+  padding: 14px 16px;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #1e1b4b;
+  line-height: 1.6;
+}
+
+/* -------- UTILS -------- */
+.hidden {
+  display: none;
+}
+
+/* -------- RESPONSIVE -------- */
+@media (max-width: 640px) {
+  .container {
+    padding: 26px 22px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
