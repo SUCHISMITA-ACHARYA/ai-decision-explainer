@@ -13,7 +13,7 @@ Backend API Docs: https://ai-decision-explainer.onrender.com/docs <br>
 -Users enter a decision and personal context<br>
 -An AI agent analyzes the input<br>
 
-The app returns:
+The app returns:<br>
 -Key factors<br>
 -Pros and cons<br>
 -Step-by-step reasoning<br>
@@ -23,26 +23,27 @@ The goal is to improve clarity and confidence in everyday decision-making.
 
 🛠️ Tech Stack
 
-Frontend:
+Frontend:<br>
 HTML, CSS, JavaScript
 
-Backend:
+Backend:<br>
 FastAPI<br>
 Pydantic AI<br>
 
-AI:
+AI:<br>
 OpenRouter (LLM-based reasoning)
 
-Deployment:
+Deployment:<br>
 Backend: Render<br>
 Frontend: Netlify<br>
 
-⚙️ Run Locally
+⚙️ Run Locally<br>
 cd backend<br>
 pip install -r requirements.txt<br>
 uvicorn main:app --port 8001<br>
 
 * Open frontend using Live Server or directly in the browser.
+
 
 
 
