@@ -12,7 +12,7 @@ form.addEventListener("submit", async (e) => {
   result.classList.add("hidden");
 
   try {
-    const response = await fetch("http://127.0.0.1:8001/explain-decision", {
+    const response = await fetch("https://ai-decision-explainer.onrender.com/explain-decision", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
