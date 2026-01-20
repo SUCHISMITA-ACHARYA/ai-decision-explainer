@@ -4,7 +4,7 @@ AI Decision Explainer is a full-stack web application that helps users make bett
 
 🌐 Live Demo
 
-Frontend: https://ai-decision-explainer.netlify.app/  (Click on this link to open the web page).
+Frontend: https://ai-decision-explainer.netlify.app/  (Click on this link to open the web page). <br>
 Backend API Docs: https://ai-decision-explainer.onrender.com/docs
 
 
@@ -43,4 +43,5 @@ pip install -r requirements.txt
 uvicorn main:app --port 8001
 
 * Open frontend using Live Server or directly in the browser.
+
 
